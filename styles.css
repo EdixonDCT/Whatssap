@@ -1,0 +1,172 @@
+* {
+    padding: 0;
+}
+:root{
+  --color-blanco: #ffffff;
+  --color-verde_claro: #32a89c;
+  --color-verde:  #075E54;
+  --color-verde_oscuro: #004237;
+  --color-verde_palido: #8BB4B0;
+  --color-verde_manzana: #09D261;
+}
+body {
+    margin: 0;
+    background-color: var(--color-verde_claro);
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    background-image: url(imagen/background.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.telefono{
+    background-color: var(--color-blanco);
+    height: 900px;
+    width: 500px;
+    border-radius: 20px;
+    overflow-y: scroll;
+}
+.telefono__encabezado{
+    position: absolute;
+    width: 500px;
+}
+.telefono__encabezado__datos{
+    height: 4%;
+    background-color: var(--color-verde_oscuro);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: var(--color-blanco);
+    font-size: 20px;
+    border-radius: 20px 20px 0px 0px;
+}
+.telefono__encabezado__navegacion{
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+}
+.telefono__encabezado__navegacion__logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    width: 50%;
+    background-color: var(--color-verde);
+    color: var(--color-blanco);
+}
+.telefono__encabezado__navegacion__opciones{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 30px;
+    width: 50%;
+    background-color: var(--color-verde);
+    color: var(--color-blanco);
+}
+.telefono__encabezado__servicios{
+    display: flex;
+    font-size: 20px;
+    background-color: var(--color-verde);
+    color: var(--color-verde_palido);
+    justify-content: center;
+    gap: 50px;
+    height: 30px;
+}
+.telefono__encabezado__servicios__orden{
+    text-decoration: none;
+    color: var(--color-verde_palido);
+}
+.telefono__encabezado__servicios__orden--activado{
+    text-decoration: none;
+    color: var(--color-blanco);
+    text-decoration: underline;
+}
+.telefono__mensajes__contactos{
+    margin: 20px 10px;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+}
+.telefono__mensajes__contactos__avatar{
+    width: 20%;
+    border-radius: 100%;
+}
+.telefono__mensajes__contactos__informacion{
+    width: 90%;
+}
+.telefono__mensajes__contactos__informacion__superior{
+    display: flex;
+    height: 50%;
+}
+.telefono__mensajes__contactos__informacion__superior__nombre{
+    font-size: 20px;
+    width: 70%;
+    padding-left: 5%;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+.telefono__mensajes__contactos__informacion__superior__hora{
+    width: 25%;
+    font-size: 20px;
+    display: flex;
+    justify-content: flex-end;
+    color: var(--color-verde_palido)
+}
+.telefono__mensajes__contactos__informacion__inferior{
+    display: flex;
+    height: 50%;
+}
+.telefono__mensajes__contactos__informacion__inferior__chat{
+    font-size: 20px;
+    width: 90%;
+    padding-left: 5%;
+    display: flex;
+    align-items: center;
+    color: var(--color-verde_palido)
+}
+.telefono__mensajes__contactos__informacion__inferior_notificacion{
+    width: 10%;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-blanco);
+    color: var(--color-blanco);
+    border-radius: 100%;
+}
+.telefono__mensajes__contactos__informacion__inferior_notificacion--activo{
+    width: 10%;
+    height: 80%;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-blanco);
+    background-color: var(--color-verde_manzana);
+    border-radius: 100%;
+}
+.telefono__mensajes__contactos__informacion__superior__hora--activo{
+    width: 25%;
+    font-size: 20px;
+    display: flex;
+    justify-content: flex-end;
+    color: var(--color-verde_manzana)
+}
+.telefono__burbuja{
+    background: var(--color-verde_manzana);
+    display: flex;
+    width: 50px;;
+    height: 50px;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    color: var(--color-blanco);
+    margin-left: 400px;
+    margin-top: -400px;
+    position: absolute;
+}
+.telefono__espacio{
+    height: 100px;
+}
